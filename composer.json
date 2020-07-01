@@ -1,0 +1,37 @@
+{
+    "name": "dazzlesoftware/model",
+    "type": "library",
+    "description": "Dazzle Model Package",
+    "keywords": ["dazzle", "framework", "model"],
+    "homepage": "https://github.com/dazzle-framework/model",
+    "license": "GPL-3.0-or-later",
+    "require": {
+        "php": "^7.3.0"
+    },
+    "require-dev": {
+        "dazzlesoftware/dazzle-coding-standard": "^1.0",
+        "dazzlesoftware/database": "^1.0",
+        "dazzlesoftware/registry": "^1.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "suggest": {
+        "dazzlesoftware/database": "^1.0 Allows using database models",
+        "dazzlesoftware/registry": "^1.0 Allows using stateful models"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dazzle\\Model\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dazzle\\Model\\UnitTests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-2.0-dev": "2.0-dev"
+        }
+    }
+}
